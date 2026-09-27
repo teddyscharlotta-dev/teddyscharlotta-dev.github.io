@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iodine Clock Calibration — Teddy Scharlotta</title>
+<meta name="description" content="Calibrating the ascorbic acid iodine clock reaction for a Chem-E-Car stopping mechanism.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Teddy Scharlotta</a>
+    <nav class="site">
+      <a href="index.html">About</a>
+      <a href="cmc.html">Ceramic Composites</a>
+      <a href="iodine-clock.html" aria-current="page">Iodine Clock</a>
+      <a href="shelving.html">Cold-Storage Shelving</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <a class="back" href="index.html">&larr; All projects</a>
+  <p class="eyebrow">Rose-Hulman Chem-E-Car Team · Academic Project</p>
+  <h1>Iodine Clock Calibration for a Chem-E-Car Stopping Mechanism</h1>
+
+  <div class="bottom-line">
+    <strong>Bottom line</strong>
+    Ran and reduced more than 200 timed iodine clock trials across five ascorbic acid
+    concentrations, producing a linear concentration&ndash;time calibration
+    (<em>t</em> = 937&nbsp;&middot;&nbsp;<em>C</em> &minus; 29.4, R&sup2; = 0.98) that lets the
+    team set a target stopping time by reagent mass alone &mdash; and cutting run-to-run
+    scatter at the competition concentration from 8.7% to 3.0% CV.
+  </div>
+
+  <div class="figs">
+    <figure>
+      <img src="images/iodine-reaction.jpg" alt="Iodine clock reaction at the moment of color change">
+      <figcaption>The endpoint: starch&ndash;iodine complex forms and the solution goes dark within about a second.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/chem-e-car.jpg" alt="Rose-Hulman Chem-E-Car vehicle">
+      <figcaption>The vehicle the clock reaction stops.</figcaption>
+    </figure>
+  </div>
+
+  <h2>The problem</h2>
+  <p>
+    A Chem-E-Car has to travel a distance announced only an hour before competition, and it has
+    to stop there without a driver, a timer, or any electronic control of the stopping event.
+    Our team uses an iodine clock reaction as the trigger: two solutions are combined, the
+    mixture stays clear for a predictable interval, and the sudden appearance of the
+    starch&ndash;iodine complex is what cuts the motor. The engineering problem is therefore not
+    chemistry for its own sake &mdash; it is <em>reproducibility</em>. A reaction that fires at
+    the right average time but scatters by fifteen percent will miss the target distance.
+  </p>
+
+  <h2>What I did</h2>
+  <p>
+    I ran the reaction testing with one other team member. We prepared a fixed two-beaker
+    protocol &mdash; ascorbic acid and iodine tincture in 30&nbsp;mL of distilled water on one
+    side, hydrogen peroxide and starch indicator on the other &mdash; and held every volume
+    constant so that ascorbic acid concentration was the only variable. We then timed the
+    interval to color change across 0.05, 0.10, 0.125, 0.15, and 0.20&nbsp;M, running fifteen to
+    thirty replicates at each point over two seasons.
+  </p>
+
+  <div class="chart-card">
+    <h3>Time to color change vs. ascorbic acid concentration</h3>
+    <p class="sub">Mean of 15&ndash;30 replicates per point. Hover a point for its value.</p>
+<div class="legend"><span class="key"><i class="sw s1"></i>Prior season</span><span class="key"><i class="sw s2"></i>Current season</span></div>
+<svg class="chart" viewBox="0 0 720 400" role="img" aria-label="Time to color change versus ascorbic acid concentration, prior and current season">
+<line x1="64" y1="344.0" x2="696" y2="344.0" class="grid"/>
+<text x="54" y="348.0" class="tick tick-y">0</text>
+<line x1="64" y1="267.8" x2="696" y2="267.8" class="grid"/>
+<text x="54" y="271.8" class="tick tick-y">40</text>
+<line x1="64" y1="191.5" x2="696" y2="191.5" class="grid"/>
+<text x="54" y="195.5" class="tick tick-y">80</text>
+<line x1="64" y1="115.3" x2="696" y2="115.3" class="grid"/>
+<text x="54" y="119.3" class="tick tick-y">120</text>
+<line x1="64" y1="39.1" x2="696" y2="39.1" class="grid"/>
+<text x="54" y="43.1" class="tick tick-y">160</text>
+<text x="101.2" y="366.0" class="tick tick-x">0.05</text>
+<text x="287.1" y="366.0" class="tick tick-x">0.1</text>
+<text x="380.0" y="366.0" class="tick tick-x">0.125</text>
+<text x="472.9" y="366.0" class="tick tick-x">0.15</text>
+<text x="658.8" y="366.0" class="tick tick-x">0.2</text>
+<text x="380.0" y="388" class="axis-title">Ascorbic acid concentration (M)</text>
+<text transform="translate(16,182.0) rotate(-90)" class="axis-title">Time to color change (s)</text>
+<polyline points="101.2,294.0 287.1,218.3 380.0,156.4 472.9,131.3 658.8,78.2" class="line s1"/>
+<circle cx="101.2" cy="294.0" r="5" class="dot s1"><title>Prior season — 0.05 M: 26.3 s</title></circle>
+<circle cx="287.1" cy="218.3" r="5" class="dot s1"><title>Prior season — 0.1 M: 65.9 s</title></circle>
+<circle cx="380.0" cy="156.4" r="5" class="dot s1"><title>Prior season — 0.125 M: 98.4 s</title></circle>
+<circle cx="472.9" cy="131.3" r="5" class="dot s1"><title>Prior season — 0.15 M: 111.6 s</title></circle>
+<circle cx="658.8" cy="78.2" r="5" class="dot s1"><title>Prior season — 0.2 M: 139.5 s</title></circle>
+<polyline points="101.2,306.8 287.1,241.7 380.0,158.5 472.9,131.5 658.8,45.9" class="line s2"/>
+<circle cx="101.2" cy="306.8" r="5" class="dot s2"><title>Current season — 0.05 M: 19.5 s</title></circle>
+<circle cx="287.1" cy="241.7" r="5" class="dot s2"><title>Current season — 0.1 M: 53.7 s</title></circle>
+<circle cx="380.0" cy="158.5" r="5" class="dot s2"><title>Current season — 0.125 M: 97.3 s</title></circle>
+<circle cx="472.9" cy="131.5" r="5" class="dot s2"><title>Current season — 0.15 M: 111.5 s</title></circle>
+<circle cx="658.8" cy="45.9" r="5" class="dot s2"><title>Current season — 0.2 M: 156.4 s</title></circle>
+</svg>
+  </div>
+
+  <div class="table-scroll">
+  <table>
+    <caption>Mean time to color change and run-to-run coefficient of variation, by season.</caption>
+    <thead>
+      <tr><th>Concentration (M)</th><th>Prior mean (s)</th><th>Prior CV</th><th>Current mean (s)</th><th>Current CV</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>0.05</td><td>26.3</td><td>5.3%</td><td>19.5</td><td>15.1%</td></tr>
+        <tr><td>0.1</td><td>65.9</td><td>4.6%</td><td>53.7</td><td>9.6%</td></tr>
+        <tr><td>0.125</td><td>98.4</td><td>8.7%</td><td>97.3</td><td>3.0%</td></tr>
+        <tr><td>0.15</td><td>111.6</td><td>3.5%</td><td>111.5</td><td>6.7%</td></tr>
+        <tr><td>0.2</td><td>139.5</td><td>1.9%</td><td>156.4</td><td>5.1%</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>What I learned</h2>
+  <p>
+    Two things, and the second one mattered more.
+  </p>
+  <p>
+    The first is that the response is close to linear in ascorbic acid concentration over this
+    range, which is convenient: it means the team can interpolate a target stop time instead of
+    testing every new distance from scratch. Both seasons fit a straight line with
+    R&sup2; near 0.98.
+  </p>
+  <p>
+    The second is that the scatter is where the real information lives. Early in the current
+    season our 0.05&nbsp;M runs showed an 86% coefficient of variation, which is not a
+    measurement &mdash; it's noise. Rather than average it away, we went back through the run
+    notes and found three trials clustered at 92&ndash;101&nbsp;seconds against a group mean near
+    19&nbsp;seconds, all recorded on a day we had switched iodine tincture lots. Excluding those
+    three on the documented cause dropped the CV to 15%. Other entries in the log traced scatter
+    to hand-stirring instead of mechanical agitation, to a delay between mixing and timing, and
+    to the age of the hydrogen peroxide batch. Controlling those brought the 0.125&nbsp;M
+    condition &mdash; the one closest to competition &mdash; from 8.7% to 3.0% CV.
+  </p>
+  <p>
+    That changed how I think about a data set. My instinct had been to treat an outlier as
+    something to remove so the average looks better. What it actually is is a signal that a
+    variable you thought you were holding constant isn't being held constant, and the run notes
+    are what let you find out which one. I now write down reagent lots and batch changes as a
+    matter of course, because the analysis is only as good as the record of what was different.
+  </p>
+
+  <h2>Skills practiced</h2>
+  <ul class="tight">
+    <li>Solution preparation and gravimetric reagent measurement</li>
+    <li>Controlled replicate testing and experimental protocol design</li>
+    <li>Statistical data reduction &mdash; mean, standard deviation, coefficient of variation</li>
+    <li>Linear regression and calibration curve development</li>
+    <li>Outlier analysis traced to documented physical cause</li>
+    <li>Excel data management across a multi-season data set</li>
+  </ul>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    Teddy Scharlotta &middot; Chemical Engineering &middot; Rose-Hulman Institute of Technology
+  </div>
+</footer>
+
+</body>
+</html>
