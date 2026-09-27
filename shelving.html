@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cold-Storage Shelving Design — Teddy Scharlotta</title>
-<meta name="description" content="Designing and fabricating welded steel racking for prepreg cold storage.">
+<title>Cold-Storage Shelving Design | Teddy Scharlotta</title>
+<meta name="description" content="Designing and fabricating angled welded steel racking for prepreg cold storage.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,84 +26,105 @@
 
   <a class="back" href="index.html">&larr; All projects</a>
   <p class="eyebrow">Engineering Intern · Aerodine Composites · Summer 2026</p>
-  <h1>Cold-Storage Shelving for Prepreg Inventory</h1>
+  <h1>Angled Racking for a Prepreg Cold-Storage Freezer</h1>
 
   <div class="bottom-line">
     <strong>Bottom line</strong>
-    Designed and fabricated welded steel racking that converted a single-level prepreg freezer
-    into full-height storage, sized to the largest box in inventory and rated for roughly
-    100&nbsp;lb per box. Modeled in SketchUp, welded by a two-person team, and in daily
-    production use.
+    Designed and welded steel racking that fits 60&nbsp;in prepreg rolls into 42&nbsp;in of usable
+    depth by storing them on a 49° angle, recovering the full length of a
+    90&nbsp;&times;&nbsp;418&nbsp;in walk-in freezer without narrowing the pallet aisle. Modeled in
+    SketchUp, fabricated by a two-person team, and in daily use.
   </div>
 
   <div class="figs">
     <figure>
-      <img src="images/shelving-model.png" alt="SketchUp solid model of the welded steel shelving unit">
-      <figcaption>SketchUp model of the selected configuration, dimensioned to the freezer interior.</figcaption>
+      <img src="images/shelving-model.png" alt="SketchUp model of the full racking run with prepreg boxes shown angled on the shelves">
+      <figcaption>Full run modeled in SketchUp. Blue volumes are prepreg boxes at the design angle.</figcaption>
     </figure>
     <figure>
-      <img src="images/shelving-installed.jpg" alt="Completed welded steel shelving installed in the freezer">
-      <figcaption>The fabricated unit installed and loaded.</figcaption>
+      <img src="images/shelving-unit-model.png" alt="SketchUp model of a single shelving bay showing the welded tube frame">
+      <figcaption>Early single-bay study. The final design dropped the feet and added a rib set.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/shelving-installed.jpg" alt="Completed welded steel racking assembled in the shop">
+      <figcaption>The fabricated frame during assembly.</figcaption>
     </figure>
   </div>
 
   <h2>The problem</h2>
   <p>
-    Prepreg has to be held below freezing to keep the resin from advancing, so the shop's
-    inventory lives in a dedicated freezer unit. That freezer had no internal structure — boxes
-    were stacked directly on the floor of the cabinet, which wasted most of the vertical volume,
-    made anything but the top box inaccessible, and put the weight of a stack on the material at
-    the bottom. The shop needed the same footprint to hold substantially more material and to
-    make every box reachable without unstacking.
+    Prepreg has to stay below freezing to keep the resin from advancing, so the shop's inventory
+    lives in a walk-in freezer measuring 90&nbsp;in deep by 418&nbsp;in long. Pallet carriers have
+    to drive the full length of it, which reserves a 48&nbsp;in aisle and leaves only 42&nbsp;in of
+    depth along the wall for storage. The boxes are 60&nbsp;in long. Laid flat in any orientation,
+    they do not fit in the space that's left, which is why the freezer had been running as open
+    floor stacking with most of its volume unused.
   </p>
 
-  <h2>Constraints</h2>
+  <h2>The constraint that set the design</h2>
+  <p>
+    Working from the largest box in inventory, 60&nbsp;&times;&nbsp;14&nbsp;&times;&nbsp;14&nbsp;in,
+    I budgeted a 64&nbsp;in slot to cover the tube wall on both sides plus enough clearance to slide
+    a box in and out without fighting it. That set up the governing geometry: a 64&nbsp;in slot has
+    to fit inside 42&nbsp;in of depth, so the shelves had to tilt.
+  </p>
+  <p>
+    The angle falls straight out of that ratio. cos<sup>&minus;1</sup>(42/64) = 49°, and every
+    other dimension in the design follows from it. Tilting the slot back to 49° puts a 64&nbsp;in
+    box inside exactly 42&nbsp;in of horizontal depth, so the aisle stays a full four feet wide and
+    the racking still runs the entire 418&nbsp;in length of the freezer.
+  </p>
+
+  <h2>The rest of the requirements</h2>
   <ul class="tight">
-    <li><strong>Envelope.</strong> The unit had to fill the freezer interior without blocking
-        the door swing or the evaporator, so I measured the usable interior rather than working
-        from the cabinet's nominal dimensions.</li>
-    <li><strong>Shelf pitch.</strong> Level spacing was set by the largest prepreg box in
-        inventory plus the clearance needed to slide it in and out, which fixed how many levels
-        the height would allow.</li>
-    <li><strong>Load.</strong> Each level had to carry roughly 100&nbsp;lb boxes without
-        deflecting enough to bind the box above it.</li>
-    <li><strong>Environment.</strong> A freezer that gets opened repeatedly cycles through the
-        dew point, so the structure sees condensation and frost. Corrosion resistance and
-        weldability mattered more than minimum weight.</li>
+    <li><strong>Load.</strong> Each level carries roughly 100&nbsp;lb boxes without deflecting
+        enough to bind the box above it.</li>
+    <li><strong>Access.</strong> Every box reachable without unstacking, which was the original
+        complaint. Floor stacking meant the weight of a pile sat on the material at the bottom and
+        only the top box was usable.</li>
+    <li><strong>Environment.</strong> A freezer opened repeatedly cycles through the dew point, so
+        the structure sees condensation and frost. Weldability and a section that sheds frost
+        mattered more than minimum weight.</li>
   </ul>
 
   <h2>What I did</h2>
   <p>
-    I measured the freezer interior and the largest box in inventory, then modeled several
-    shelving configurations in SketchUp to trade level count against clearance — more levels
-    store more material, but only until the pitch gets too tight to remove a box cleanly. The
-    model made that trade visible before any steel was cut, and settled how many levels the
-    cabinet would actually support.
+    I measured the freezer interior and the inventory, then modeled the racking in SketchUp with
+    the boxes included as solids so the angle, the slot pitch, and the aisle could be checked
+    against each other rather than one at a time. Several configurations went through before the
+    layout settled. The single-bay study above is one of the early ones; the version we built
+    dropped the feet and picked up an additional set of ribs after the load path made more sense
+    with the frame sitting directly on the floor.
   </p>
   <p>
-    For structure I specified 1.5&nbsp;in square steel tube. At the spans involved it carried the
-    load with margin, it welds cleanly, and the closed section gives far less surface for frost
-    to collect on than an open channel or angle would. I then fabricated the unit with one other
-    team member, welding the frame and levels to the modeled dimensions.
+    For structure I specified 1.5&nbsp;in square steel tube. It carried the load with margin at
+    these spans, it welds cleanly, and the closed section gives frost far less surface to collect
+    on than an open channel or angle would. I then fabricated the unit with one other team member,
+    welding the frame and shelf levels to the modeled dimensions.
   </p>
 
   <h2>What I learned</h2>
   <p>
-    This was the first project where I owned the whole path from measurement to installed
-    hardware, and the lesson was how much the fabrication constraints should have informed the
-    model earlier. A few joints that were trivial to draw in SketchUp were awkward to reach with
-    a torch once the frame was tacked together, and the sequence we welded in ended up mattering
-    as much as the geometry. On the next one I'd sketch the weld sequence alongside the model
-    rather than treating fabrication as something that happens after the design is finished.
+    The useful lesson was that the binding constraint is rarely the one in the request. I was asked
+    for shelves. What actually decided the design was a four-foot aisle I could not touch and a box
+    that was longer than the space left over, and once those two numbers were on paper the angle
+    was arithmetic rather than a judgment call. Getting to that point took longer than the modeling
+    did.
+  </p>
+  <p>
+    The second lesson was about fabrication. A few joints that were trivial to draw in SketchUp were
+    awkward to reach with a torch once the frame was tacked together, and the order we welded in
+    ended up mattering as much as the geometry. On the next one I would sketch the weld sequence
+    alongside the model instead of treating fabrication as what happens after the design is done.
   </p>
 
   <h2>Skills practiced</h2>
   <ul class="tight">
-    <li>Dimensional measurement and design to a fixed envelope</li>
-    <li>SketchUp solid modeling and design iteration</li>
+    <li>Design to a fixed envelope under a non-negotiable access constraint</li>
+    <li>Geometric problem solving and dimensional analysis</li>
+    <li>SketchUp solid modeling, including modeling the payload to verify fit</li>
     <li>Structural material selection for load and service environment</li>
     <li>Steel fabrication and welding in a two-person team</li>
-    <li>Translating a workflow problem into a hardware requirement</li>
   </ul>
 
 </div>

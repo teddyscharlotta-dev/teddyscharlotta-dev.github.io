@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ceramic Matrix Composite Development — Teddy Scharlotta</title>
+<title>Ceramic Matrix Composite Development | Teddy Scharlotta</title>
 <meta name="description" content="Developing an end-to-end manufacturing process for a high-temperature ceramic matrix composite.">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -30,75 +30,101 @@
 
   <div class="bottom-line">
     <strong>Bottom line</strong>
-    Developed an end-to-end manufacturing process for a ceramic matrix composite rated above
-    1000&nbsp;°C in steam — from materials selection through cure, infiltration, sintering, and
-    mechanical test — yielding the first ceramic parts ever produced in-house at the company.
+    Developed an end-to-end manufacturing process for an oxide ceramic matrix composite rated above
+    1000&nbsp;°C in steam, covering slurry formulation, wet layup, warm pressing, binder burnout,
+    and sintering. It produced the first ceramic parts ever made in-house at the company.
   </div>
 
   <div class="figs">
     <figure>
-      <img src="images/cmc-press.jpg" alt="Hydraulic hot press used to consolidate ceramic matrix composite laminates">
-      <figcaption>Heated press used for consolidation and cure of the composite laminates.</figcaption>
+      <img src="images/cmc-press.jpg" alt="Hydraulic warm press with heated platens and its cycle control panel">
+      <figcaption>The warm press used to consolidate and polymerize the first prototype laminates.</figcaption>
     </figure>
     <figure>
-      <img src="images/cmc-bagging.jpg" alt="Vacuum bag over a ceramic fabric layup on a flat tool">
-      <figcaption>Vacuum-bagged ceramic fabric layup prior to infiltration.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/cmc-part.jpg" alt="Finished ceramic matrix composite test coupon">
-      <figcaption>Finished coupon from the qualified process.</figcaption>
+      <img src="images/cmc-bagging.jpg" alt="Ceramic fabric laminate sealed inside a red vacuum bag">
+      <figcaption>The first laminate off that press, polymerized but not yet sintered.</figcaption>
     </figure>
   </div>
 
   <h2>The problem</h2>
   <p>
-    Aerodine's core business is fiberglass and carbon fiber. To diversify the customer base,
-    the company accepted an order for a structural component that had to survive continuous
-    service above 1000&nbsp;°C in a steam environment — a condition that rules out every polymer
-    matrix the shop had ever run. There was no existing procedure, no qualified material system,
-    and no in-house history with ceramics to fall back on.
+    Aerodine's core business is fiberglass and carbon fiber. To diversify the customer base, the
+    company accepted an order for a structural component that had to survive continuous service
+    above 1000&nbsp;°C in a steam environment, a condition that rules out every polymer matrix the
+    shop had ever run. There was no existing procedure, no qualified material system, and no
+    in-house history with ceramics to fall back on.
   </p>
 
-  <h2>What I did</h2>
+  <h2>Building the process</h2>
   <p>
-    I started with a materials survey to identify a matrix and reinforcement combination that
-    could hold up under those conditions, working from the ceramic composites literature and
-    supplier data. From there I worked on a small team to build the process end to end:
-    polymer precursor selection and cure, infiltration, fiber content, sintering schedule, and
-    final density. Each parameter had to be dialed in through a combination of literature
-    research and hands-on trials.
+    I started with a materials survey to find a matrix and reinforcement pairing that could hold up
+    under those conditions, working from the oxide ceramic composite literature and supplier data.
+    From there I worked on a small team to develop the process end to end. The route we landed on
+    was a wet manual layup of a ceramic slurry onto fabric, warm pressed and polymerized into thin
+    sheets, then fired.
   </p>
+
+  <h3>Slurry formulation and particle packing</h3>
   <p>
-    I also developed the test plan used to qualify finished parts, covering flexural strength
-    and porosity. That was the piece that converted subjective judgments about a given batch
-    into numbers the team could defend to a customer.
+    Getting the matrix into the fiber tows was the first real problem. I ran particle packing work
+    with alumina powder to establish how much alcohol the slurry needed: too little and the
+    viscosity kept the slurry sitting on the surface of the fabric, too much and the solids content
+    dropped below what the matrix required. The packing behavior set the ratio, and the ratio set
+    how completely the fiber infiltrated.
+  </p>
+
+  <h3>Binder burnout and sintering</h3>
+  <p>
+    Firing had two jobs that pull against each other. The polymer binder has to leave the part, and
+    the ceramic has to densify, and doing both in one cycle meant a variable heating schedule rather
+    than a single ramp. Sintering ran in the mid-1200&nbsp;°C range. We also set the parts on kiln
+    furniture rather than flat on the shelf so oxygen could reach the whole surface and burnout
+    products had a path out during the cycle, which is easy to overlook and shows up immediately in
+    the finished part.
+  </p>
+
+  <h3>An approach we ruled out</h3>
+  <p>
+    We evaluated infiltration routes that skip the polymer binder entirely and chose not to pursue
+    them. They would have removed the burnout step, but they did not fit the equipment the shop
+    already had or the cycle time the order needed. Keeping the polymer route meant accepting
+    burnout as a constraint and designing the heating schedule around it, which turned out to be the
+    cheaper problem to solve.
+  </p>
+
+  <h3>Testing</h3>
+  <p>
+    I developed the test plan used to qualify finished parts, covering flexural strength and
+    porosity. That was the piece that converted subjective judgments about a given batch into
+    numbers the team could defend to a customer.
   </p>
 
   <h2>What I learned</h2>
   <p>
-    The thing I did not expect was how tightly coupled the process parameters were. Raising
-    fiber content to chase flexural strength changed the infiltration behavior, which moved
-    final density, which moved strength back the other way. I had come in treating the process
-    as a checklist of independent settings to optimize one by one. It isn't — it's one system,
-    and the only way to attribute a result to a cause was to hold everything else fixed and
-    move a single variable at a time, then measure rather than eyeball. That discipline is
-    what I took away from the summer, more than any particular parameter value.
+    The thing I did not expect was how tightly coupled the process parameters were. Raising fiber
+    content to chase flexural strength changed the infiltration behavior, which moved final density,
+    which moved strength back the other way. Slurry viscosity, press schedule, burnout ramp, and
+    sintering profile all landed in the same knot. I had come in treating the process as a checklist
+    of independent settings to optimize one at a time. It isn't. It's one system, and the only way
+    to attribute a result to a cause was to hold everything else fixed, move a single variable, and
+    measure rather than eyeball.
   </p>
 
   <h2>Skills practiced</h2>
   <ul class="tight">
     <li>Materials selection against a defined service environment</li>
-    <li>Polymer-derived ceramic processing: infiltration, pyrolysis, and sintering</li>
-    <li>Composite layup and vacuum bagging</li>
+    <li>Ceramic slurry formulation and particle packing</li>
+    <li>Wet layup, vacuum bagging, and warm press consolidation</li>
+    <li>Binder burnout and sintering schedule development</li>
     <li>Design of experiments on coupled process variables</li>
-    <li>Test plan development — flexural strength and porosity characterization</li>
+    <li>Test plan development for flexural strength and porosity characterization</li>
     <li>Technical literature research and supplier evaluation</li>
   </ul>
 
   <p style="font-size:.86rem;color:var(--text-muted);max-width:68ch;">
-    Note: specific formulations, process parameters, and customer details are proprietary to
-    Aerodine Composites and are deliberately omitted here. This entry describes the engineering
-    approach and the skills practiced rather than the recipe.
+    Note: specific formulations, material grades, and customer details are proprietary to Aerodine
+    Composites and are deliberately omitted here. This entry describes the engineering approach and
+    the skills practiced rather than the recipe.
   </p>
 
 </div>
