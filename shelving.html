@@ -54,68 +54,47 @@
   <h2>The problem</h2>
   <p>
     Prepreg has to stay below freezing to keep the resin from advancing, so the shop's inventory
-    lives in a walk-in freezer measuring 90&nbsp;in deep by 418&nbsp;in long. Pallet carriers have
-    to drive the full length of it, which reserves a 48&nbsp;in aisle and leaves only 42&nbsp;in of
-    depth along the wall for storage. The boxes are 60&nbsp;in long. Laid flat in any orientation,
-    they do not fit in the space that's left, which is why the freezer had been running as open
-    floor stacking with most of its volume unused.
+    lives in a walk-in freezer measuring 90&nbsp;in deep by 418&nbsp;in long. It had no internal
+    structure, so boxes were stacked on the floor. Most of the height went unused, the weight of a
+    stack sat on the material at the bottom, and only the top box was reachable. As company 
+    inventory expanded, this issue would need to be addressed thoroughly rather than ignored. 
   </p>
 
-  <h2>The constraint that set the design</h2>
-  <p>
-    Working from the largest box in inventory, 60&nbsp;&times;&nbsp;14&nbsp;&times;&nbsp;14&nbsp;in,
-    I budgeted a 64&nbsp;in slot to cover the tube wall on both sides plus enough clearance to slide
-    a box in and out without fighting it. That set up the governing geometry: a 64&nbsp;in slot has
-    to fit inside 42&nbsp;in of depth, so the shelves had to tilt.
-  </p>
-  <p>
-    The angle falls straight out of that ratio. cos<sup>&minus;1</sup>(42/64) = 49°, and every
-    other dimension in the design follows from it. Tilting the slot back to 49° puts a 64&nbsp;in
-    box inside exactly 42&nbsp;in of horizontal depth, so the aisle stays a full four feet wide and
-    the racking still runs the entire 418&nbsp;in length of the freezer.
-  </p>
-
-  <h2>The rest of the requirements</h2>
+  <h2>Constraints</h2>
   <ul class="tight">
-    <li><strong>Load.</strong> Each level carries roughly 100&nbsp;lb boxes without deflecting
-        enough to bind the box above it.</li>
-    <li><strong>Access.</strong> Every box reachable without unstacking, which was the original
-        complaint. Floor stacking meant the weight of a pile sat on the material at the bottom and
-        only the top box was usable.</li>
+    <li><strong>Aisle.</strong> Pallet carriers drive the full length of the freezer, which reserves
+        48&nbsp;in and leaves 42&nbsp;in of depth along the wall.</li>
+    <li><strong>Box size.</strong> The largest box in inventory is
+        60&nbsp;&times;&nbsp;14&nbsp;&times;&nbsp;14&nbsp;in. Allowing for tube wall on both sides
+        and enough clearance to slide one in and out, each slot needed 64&nbsp;in.</li>
+    <li><strong>Load.</strong> Roughly 100&nbsp;lb per box, with little enough deflection that a
+        loaded level does not bind the box above it.</li>
     <li><strong>Environment.</strong> A freezer opened repeatedly cycles through the dew point, so
-        the structure sees condensation and frost. Weldability and a section that sheds frost
-        mattered more than minimum weight.</li>
+        the structure sees condensation and frost.</li>
   </ul>
+  <p>
+    The first two set the geometry. A 64&nbsp;in slot does not fit flat in 42&nbsp;in of depth, so
+    the shelves had to tilt, and the angle is just the ratio:
+    cos<sup>&minus;1</sup>(42/64) = 49°. At that angle a full-length box sits inside exactly
+    42&nbsp;in of horizontal depth, the aisle stays a full four feet, and the racking still runs the
+    entire 418&nbsp;in length of the freezer.
+  </p>
 
   <h2>What I did</h2>
   <p>
-    I measured the freezer interior and the inventory, then modeled the racking in SketchUp with
-    the boxes included as solids so the angle, the slot pitch, and the aisle could be checked
-    against each other rather than one at a time. Several configurations went through before the
-    layout settled. The single-bay study above is one of the early ones; the version we built
-    dropped the feet and picked up an additional set of ribs after the load path made more sense
-    with the frame sitting directly on the floor.
+    I measured the freezer interior and the inventory, then modeled the racking in SketchUp with the
+    boxes included as solids, so the angle, the slot pitch, and the aisle could be checked against
+    each other instead of one at a time. Several configurations went through before the layout
+    settled. The single-bay study above is an early one; the version we built dropped the feet and
+    picked up another set of ribs once the frame sat directly on the floor.
   </p>
   <p>
-    For structure I specified 1.5&nbsp;in square steel tube. It carried the load with margin at
-    these spans, it welds cleanly, and the closed section gives frost far less surface to collect
-    on than an open channel or angle would. I then fabricated the unit with one other team member,
-    welding the frame and shelf levels to the modeled dimensions.
-  </p>
-
-  <h2>What I learned</h2>
-  <p>
-    The useful lesson was that the binding constraint is rarely the one in the request. I was asked
-    for shelves. What actually decided the design was a four-foot aisle I could not touch and a box
-    that was longer than the space left over, and once those two numbers were on paper the angle
-    was arithmetic rather than a judgment call. Getting to that point took longer than the modeling
-    did.
-  </p>
-  <p>
-    The second lesson was about fabrication. A few joints that were trivial to draw in SketchUp were
-    awkward to reach with a torch once the frame was tacked together, and the order we welded in
-    ended up mattering as much as the geometry. On the next one I would sketch the weld sequence
-    alongside the model instead of treating fabrication as what happens after the design is done.
+    For structure I specified 1.5&nbsp;in square steel tube. It carried the load with margin at these
+    spans, it welds cleanly, and the closed section gives frost far less surface to collect on than
+    an open channel or angle would. I fabricated the unit with one other team member, welding the
+    frame and shelf levels to the modeled dimensions. A few joints that were easy to draw turned out
+    to be hard to reach with a torch once the frame was tacked together, so the weld order ended up
+    mattering as much as the geometry.
   </p>
 
   <h2>Skills practiced</h2>
