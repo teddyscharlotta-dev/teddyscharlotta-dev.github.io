@@ -25,36 +25,38 @@
 <div class="wrap">
 
   <a class="back" href="index.html">&larr; All projects</a>
-  <p class="eyebrow">Rose-Hulman Chem-E-Car Team · Academic Project</p>
+  <p class="eyebrow">Rose-Hulman Chem-E-Car Team &middot; Academic Project</p>
   <h1>Iodine Clock Calibration for a Chem-E-Car Stopping Mechanism</h1>
 
   <div class="bottom-line">
-    Ran and reduced more than 200 timed iodine clock trials across five ascorbic acid concentrations over two seasons.
-    The result is a linear concentration–time calibration (t = 937 · C − 29.4, R² = 0.98) that lets the team pick a 
-    stopping time from reagent mass instead of testing each new distance from scratch.  Precision at 0.125 M, the 
-    concentration closest to competition, improved from 8.7% to 3.0% CV. Precision at the other four concentrations 
-    got worse, and the second half of the page is about why.
+    <strong>Bottom line</strong>
+    Ran 262 timed iodine clock trials over two seasons and reduced them to a concentration&ndash;time
+    calibration the team uses to set a stopping distance. Time rises linearly with ascorbic acid
+    concentration from 0.05 to 0.20&nbsp;M (<em>t</em> = 933&nbsp;<em>C</em> &minus; 29.0,
+    R&sup2; = 0.99 this season), so a target stop time comes off the fit instead of out of a fresh
+    round of testing. Precision is still the weak point. Run-to-run variation fell at 0.125&nbsp;M,
+    from 9.8% to 4.8% CV, and rose at the other four concentrations.
   </div>
-
 
   <h2>The problem</h2>
   <p>
-    A Chem-E-Car has to travel a distance announced only an hour before competition, and it has
-    to stop there without a driver, a timer, or any electronic control of the stopping event.
-    Our team uses an iodine clock reaction as the trigger. two solutions are combined, the
-    mixture stays clear for a predictable interval, and the sudden appearance of the
-    starch&ndash;iodine complex is what cuts the motor. The engineering problem is therefore 
-    honing the reproducibility of the process and collecting precide data. 
+    A Chem-E-Car gets its target distance about an hour before it runs, and it has to stop there on
+    its own, with no driver and no electronic control of the stopping event. Our team triggers the
+    stop with an iodine clock reaction. Two solutions are combined, the mixture stays clear for a
+    set interval, and the starch&ndash;iodine complex appears all at once and cuts the motor. That
+    makes reproducibility the whole problem. A reaction that averages the right time but scatters by
+    fifteen percent will still miss the distance.
   </p>
 
   <h2>What I did</h2>
   <p>
-    I ran the reaction testing with one other team member. We prepared a fixed two-beaker
-    protocol, with ascorbic acid and iodine tincture in 30&nbsp;mL of distilled water on one
-    side and hydrogen peroxide and starch indicator on the other, and held every volume
-    constant so that ascorbic acid concentration was the only variable. We then timed the
-    interval to color change across 0.05, 0.10, 0.125, 0.15, and 0.20&nbsp;M, running fifteen to
-    thirty replicates at each point over two seasons.
+    I ran the testing with one other team member. Each trial used two beakers, ascorbic acid and
+    iodine tincture in 30&nbsp;mL of distilled water in one, hydrogen peroxide and starch indicator
+    in the other. Water and peroxide volumes were fixed, so the mass of vitamin C was the only thing
+    that changed between concentrations. Starch went in as four drops rather than a measured volume.
+    We timed the interval to color change at 0.05, 0.075, 0.10, 0.125, 0.15 and 0.20&nbsp;M last
+    season, and at the same set minus 0.075&nbsp;M this season, with fifteen to thirty replicates at
+    each concentration.
   </p>
 
   <div class="chart-card">
@@ -73,81 +75,59 @@
 <line x1="64" y1="39.1" x2="696" y2="39.1" class="grid"/>
 <text x="54" y="43.1" class="tick tick-y">160</text>
 <text x="101.2" y="366.0" class="tick tick-x">0.05</text>
+<text x="194.1" y="366.0" class="tick tick-x">0.075</text>
 <text x="287.1" y="366.0" class="tick tick-x">0.1</text>
 <text x="380.0" y="366.0" class="tick tick-x">0.125</text>
 <text x="472.9" y="366.0" class="tick tick-x">0.15</text>
 <text x="658.8" y="366.0" class="tick tick-x">0.2</text>
 <text x="380.0" y="388" class="axis-title">Ascorbic acid concentration (M)</text>
 <text transform="translate(16,182.0) rotate(-90)" class="axis-title">Time to color change (s)</text>
-<polyline points="101.2,294.0 287.1,218.3 380.0,156.4 472.9,131.3 658.8,78.2" class="line s1"/>
-<circle cx="101.2" cy="294.0" r="5" class="dot s1"><title>Prior season, 0.05 M: 26.3 s</title></circle>
-<circle cx="287.1" cy="218.3" r="5" class="dot s1"><title>Prior season, 0.1 M: 65.9 s</title></circle>
-<circle cx="380.0" cy="156.4" r="5" class="dot s1"><title>Prior season, 0.125 M: 98.4 s</title></circle>
-<circle cx="472.9" cy="131.3" r="5" class="dot s1"><title>Prior season, 0.15 M: 111.6 s</title></circle>
-<circle cx="658.8" cy="78.2" r="5" class="dot s1"><title>Prior season, 0.2 M: 139.5 s</title></circle>
-<polyline points="101.2,306.8 287.1,241.7 380.0,158.5 472.9,131.5 658.8,45.9" class="line s2"/>
-<circle cx="101.2" cy="306.8" r="5" class="dot s2"><title>Current season, 0.05 M: 19.5 s</title></circle>
-<circle cx="287.1" cy="241.7" r="5" class="dot s2"><title>Current season, 0.1 M: 53.7 s</title></circle>
-<circle cx="380.0" cy="158.5" r="5" class="dot s2"><title>Current season, 0.125 M: 97.3 s</title></circle>
-<circle cx="472.9" cy="131.5" r="5" class="dot s2"><title>Current season, 0.15 M: 111.5 s</title></circle>
-<circle cx="658.8" cy="45.9" r="5" class="dot s2"><title>Current season, 0.2 M: 156.4 s</title></circle>
+<polyline points="101.2,294.0 194.1,243.3 287.1,218.3 380.0,176.5 472.9,131.3 658.8,78.2" class="line s1"/>
+<circle cx="101.2" cy="294.0" r="5" class="dot s1"><title>Prior season, 0.05 M: 26.25 s</title></circle>
+<circle cx="194.1" cy="243.3" r="5" class="dot s1"><title>Prior season, 0.075 M: 52.85 s</title></circle>
+<circle cx="287.1" cy="218.3" r="5" class="dot s1"><title>Prior season, 0.1 M: 65.94 s</title></circle>
+<circle cx="380.0" cy="176.5" r="5" class="dot s1"><title>Prior season, 0.125 M: 87.90 s</title></circle>
+<circle cx="472.9" cy="131.3" r="5" class="dot s1"><title>Prior season, 0.15 M: 111.62 s</title></circle>
+<circle cx="658.8" cy="78.2" r="5" class="dot s1"><title>Prior season, 0.2 M: 139.47 s</title></circle>
+<polyline points="101.2,306.8 287.1,238.1 380.0,162.8 472.9,131.5 658.8,45.9" class="line s2"/>
+<circle cx="101.2" cy="306.8" r="5" class="dot s2"><title>Current season, 0.05 M: 19.50 s</title></circle>
+<circle cx="287.1" cy="238.1" r="5" class="dot s2"><title>Current season, 0.1 M: 55.59 s</title></circle>
+<circle cx="380.0" cy="162.8" r="5" class="dot s2"><title>Current season, 0.125 M: 95.10 s</title></circle>
+<circle cx="472.9" cy="131.5" r="5" class="dot s2"><title>Current season, 0.15 M: 111.51 s</title></circle>
+<circle cx="658.8" cy="45.9" r="5" class="dot s2"><title>Current season, 0.2 M: 156.41 s</title></circle>
 </svg>
   </div>
 
   <div class="table-scroll">
   <table>
-    <caption>Mean time to color change and run-to-run coefficient of variation, by season.</caption>
+    <caption>
+      Mean time to color change and run-to-run coefficient of variation, by season. Trials with a
+      logged procedural deviation are excluded; 0.075&nbsp;M was run only in the prior season.
+    </caption>
     <thead>
       <tr><th>Concentration (M)</th><th>Prior mean (s)</th><th>Prior CV</th><th>Current mean (s)</th><th>Current CV</th></tr>
     </thead>
     <tbody>
-        <tr><td>0.05</td><td>26.3</td><td>5.3%</td><td>19.5</td><td>15.1%</td></tr>
-        <tr><td>0.1</td><td>65.9</td><td>4.6%</td><td>53.7</td><td>9.6%</td></tr>
-        <tr><td>0.125</td><td>98.4</td><td>8.7%</td><td>97.3</td><td>3.0%</td></tr>
-        <tr><td>0.15</td><td>111.6</td><td>3.5%</td><td>111.5</td><td>6.7%</td></tr>
-        <tr><td>0.2</td><td>139.5</td><td>1.9%</td><td>156.4</td><td>5.1%</td></tr>
+        <tr><td>0.05</td><td>26.25</td><td>5.3%</td><td>19.50</td><td>15.1%</td></tr>
+        <tr><td>0.075</td><td>52.85</td><td>2.3%</td><td>&mdash;</td><td>&mdash;</td></tr>
+        <tr><td>0.1</td><td>65.94</td><td>4.6%</td><td>55.59</td><td>5.1%</td></tr>
+        <tr><td>0.125</td><td>87.90</td><td>9.8%</td><td>95.10</td><td>4.8%</td></tr>
+        <tr><td>0.15</td><td>111.62</td><td>3.5%</td><td>111.51</td><td>6.7%</td></tr>
+        <tr><td>0.2</td><td>139.47</td><td>1.9%</td><td>156.41</td><td>5.1%</td></tr>
     </tbody>
   </table>
   </div>
 
   <h2>Data analysis</h2>
   <p>
-    Reaction time rises close to linearly with ascorbic acid concentration across this range. A
-    least-squares fit to the five concentration means gives
-    <em>t</em> = 937&nbsp;<em>C</em> &minus; 29.4 (R&sup2; = 0.98) for the current season and
-    <em>t</em> = 771&nbsp;<em>C</em> &minus; 8.0 (R&sup2; = 0.98) for the prior one, so a target
-    stop time can be interpolated from reagent mass instead of tested from scratch for every new
+    Time to color change rises linearly with concentration across this range. Fitting the
+    concentration means gives <em>t</em> = 933&nbsp;<em>C</em> &minus; 29.0 (R&sup2; = 0.99) for this
+    season and <em>t</em> = 771&nbsp;<em>C</em> &minus; 10.1 (R&sup2; = 0.99) for last season. Either
+    fit sets a stopping time from reagent mass instead of a fresh round of testing at every new
     distance.
   </p>
   <p>
-    The scatter is the more useful result. Three of the thirty trials at 0.05 M read 92 to 101 
-    seconds against a group otherwise clustered near 19, and all three were logged the day 
-    the team switched iodine tincture lots. Dropping those three leaves a mean of 19.5 s at 15.1% CV.
-    Compared with the prior season, CV rose at 0.05, 0.10, 0.15, and 0.20 M and fell only at 0.125 M. 
-    The prior season ran fewer operators and a narrower window of lab conditions, so the most likely
-    explanation is procedural drift across a larger and less controlled data set rather than anything
-    in the chemistry. Tightening the mixing and timing procedure at 0.125 M is what brought that point 
-    from 8.7% to 3.0%.
-  </p>
-
-  <h2>Skills practiced</h2>
-  <ul class="tight">
-    <li>Solution preparation and gravimetric reagent measurement</li>
-    <li>Controlled replicate testing and experimental protocol design</li>
-    <li>Statistical data reduction: mean, standard deviation, and coefficient of variation</li>
-    <li>Linear regression and calibration curve development</li>
-    <li>Outlier analysis traced to documented physical cause</li>
-    <li>Excel data management across a multi-season data set</li>
-  </ul>
-
-</div>
-</main>
-
-<footer class="site">
-  <div class="wrap">
-    Teddy Scharlotta &middot; Chemical Engineering &middot; Rose-Hulman Institute of Technology
-  </div>
-</footer>
-
-</body>
-</html>
+    Trials are held out only where the log records a procedural deviation. Five trials at
+    0.10&nbsp;M this season and six at 0.125&nbsp;M last season were stirred by hand rather than on
+    the plate, and each group sits well outside the rest of its set. Three trials at 0.05&nbsp;M this
+    season read 92 to 101&nbsp;seconds against a group
