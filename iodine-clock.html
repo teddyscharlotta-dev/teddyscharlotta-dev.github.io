@@ -106,66 +106,25 @@
 </svg>
   </div>
 
-  <div class="table-scroll">
-  <table>
-    <caption>
-      Mean time to color change, run-to-run coefficient of variation (CV), and number of trials (n)
-      by season. Flagged trials are excluded. 0.075&nbsp;M was run only in 2024&ndash;25.
-    </caption>
-    <thead>
-      <tr><th>Concentration (M)</th><th>2024&ndash;25 mean (s)</th><th>CV</th><th>n</th><th>2025&ndash;26 mean (s)</th><th>CV</th><th>n</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>0.050</td><td>26.3</td><td>5.3%</td><td>30</td><td>19.5</td><td>15.1%</td><td>27</td></tr>
-      <tr><td>0.075</td><td>52.8</td><td>2.3%</td><td>20</td><td>&ndash;</td><td>&ndash;</td><td>&ndash;</td></tr>
-      <tr><td>0.100</td><td>65.9</td><td>4.6%</td><td>30</td><td>55.6</td><td>5.1%</td><td>25</td></tr>
-      <tr><td>0.125</td><td>87.9</td><td>9.8%</td><td>30</td><td>96.9</td><td>4.1%</td><td>15</td></tr>
-      <tr><td>0.150</td><td>111.6</td><td>3.5%</td><td>15</td><td>111.5</td><td>6.7%</td><td>15</td></tr>
-      <tr><td>0.200</td><td>139.5</td><td>1.9%</td><td>15</td><td>156.4</td><td>5.1%</td><td>15</td></tr>
-    </tbody>
-  </table>
-  </div>
-
-  <h2>Data analysis</h2>
-  <p>
-    Concentration and time to color change fall on a straight line. Least-squares fits through
-    each test set's average give <em>C</em> = 0.001054&nbsp;<em>t</em> + 0.03323 for 2025&ndash;26
+   <h2>Data analysis</h2>
+    <p>
+    Concentration and time to color change fall on a straight line. Excel trendlines through each
+    test set's average give <em>C</em> = 0.001054&nbsp;<em>t</em> + 0.03323 for 2025&ndash;26
     (R&sup2; = 0.9838) and <em>C</em> = 0.001278&nbsp;<em>t</em> + 0.01451 for 2024&ndash;25
-    (R&sup2; = 0.9805), with <em>C</em> in M and <em>t</em> in seconds. That lets the team read off
-    the concentration for a target stopping time instead of running a new round of tests. The two
-    seasons do not line up, though: at 0.200&nbsp;M the color change took 156.4&nbsp;s in
-    2025&ndash;26 and 139.5&nbsp;s in 2024&ndash;25. A curve from one season should be checked
-    against fresh reagents before it is trusted the next.
-  </p>
-  <p>
-    Flagged trials were left out: eleven that were stirred by hand, and three 2025&ndash;26 runs at
-    0.050&nbsp;M marked as suspected measurement error, possibly with a different iodine tincture.
-    Including those three would raise the 2025&ndash;26 0.050&nbsp;M coefficient of variation from
-    15% to 86%. The 2025&ndash;26 0.125&nbsp;M mean uses the first 15 of 26 runs at that
-    concentration.
-  </p>
-  <p>
-    Run-to-run precision was worse in 2025&ndash;26 at every concentration except 0.125&nbsp;M,
-    where the CV went from 9.8% to 4.1%. Most of the 2024&ndash;25 figure comes from two separate
-    0.125&nbsp;M sets that averaged 94.2&nbsp;s and 78.5&nbsp;s; within each set the CV was 3.5% and
-    5.5%. The bench notes record several things that could add scatter: new batches of vitamin C or
-    peroxide made partway through a set, peroxide run down to the last of the bottle, a 4&nbsp;s
-    delay before stirring started, and a ring stand adjusted mid-set for better stirring contact.
-    One note also suggests the starch solution was weaker than planned, since a new batch dispensed
-    in larger drops gave similar times. The next round tests one concentration with fresh vs. aged
-    peroxide, a single operator, and hand stirring vs. the stir plate.
+    (R&sup2; = 0.9805), with <em>C</em> in M and <em>t</em> in seconds. That lets the team pick a
+    concentration for a target stopping time instead of running a new round of tests. The two
+    seasons don't line up exactly, so a curve from one season should be checked with fresh reagents
+    before it is trusted the next. Trials flagged in the lab notes, like runs that were stirred by
+    hand, were left out.
   </p>
 
   <h2>Skills practiced</h2>
   <ul class="tight">
     <li>Solution prep by mass to a target molarity</li>
     <li>Replicate testing with one controlled variable</li>
-    <li>Mean, standard deviation, and CV calculations</li>
     <li>Linear regression and calibration curves</li>
     <li>Outlier exclusion based on lab notebook records</li>
     <li>Excel data management for a two-season data set</li>
-    <li>Troubleshooting variability from bench notes</li>
-    <li>Planning a follow-up experiment</li>
   </ul>
 
 </div>
