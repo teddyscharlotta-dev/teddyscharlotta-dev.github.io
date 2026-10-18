@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iodine Clock Calibration | Teddy Scharlotta</title>
+<meta name="description" content="Calibrating the ascorbic acid iodine clock reaction for a Chem-E-Car stopping mechanism.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Teddy Scharlotta</a>
+    <nav class="site">
+      <a href="index.html">About</a>
+      <a href="cmc.html">Ceramic Composites</a>
+      <a href="iodine-clock.html" aria-current="page">Iodine Clock</a>
+      <a href="shelving.html">Cold-Storage Shelving</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <a class="back" href="index.html">&larr; All projects</a>
+  <p class="eyebrow">Rose-Hulman Chem-E-Car Team</p>
+  <h1>Iodine Clock Calibration for a Chem-E-Car Stopping Mechanism</h1>
+
+  <div class="summary">
+    <strong>Summary</strong>
+    Ran 262 timed iodine clock trials over two seasons across six ascorbic acid concentrations.
+    The reaction is what cuts the motor on our Chem-E-Car, so the time it takes to change color
+    sets how far the car travels. Turning the trials into a calibration curve lets the team pick a
+    reagent concentration for whatever distance is announced, instead of testing from scratch on
+    competition day.
+  </div>
+
+  <h2>The problem</h2>
+  <p>
+    A Chem-E-Car gets its target distance about an hour before it runs, and it has to stop there on
+    its own, with no driver and no electronic control of the stopping event. Our team triggers the
+    stop with an iodine clock reaction. Two solutions are combined, the mixture stays clear for a
+    set interval, and then the starch&ndash;iodine complex appears all at once and cuts the motor.
+    So the reaction has to be reproducible. If the timing averages out right but scatters by
+    fifteen percent from run to run, the car still misses the distance.
+  </p>
+
+  <h2>What I did</h2>
+  <p>
+    I ran the testing with one other team member. Each trial used two beakers: ascorbic acid and
+    iodine tincture in 30&nbsp;mL of distilled water in one, and hydrogen peroxide and starch
+    indicator in the other. Water and peroxide volumes were fixed, so the mass of vitamin C was the
+    only thing that changed between concentrations. Starch went in as four drops rather than a
+    measured volume. In the 2024&ndash;25 season we timed the color change at 0.050, 0.075, 0.100,
+    0.125, 0.150, and 0.200&nbsp;M. In 2025&ndash;26 we ran the same set without 0.075&nbsp;M. Each
+    concentration got fifteen to thirty replicates per season, some of them split across two test
+    sets.
+  </p>
+
+  <div class="chart-card">
+    <h3>Ascorbic acid concentration vs. time to color change</h3>
+    <p class="sub">Each point is one test set's average. Lines are least-squares fits through those points. Hover a point for its value.</p>
+<div class="legend"><span class="key"><i class="sw s1"></i>2024&ndash;25 season</span><span class="key"><i class="sw s2"></i>2025&ndash;26 season</span></div>
+<svg class="chart" viewBox="0 0 720 400" role="img" aria-label="Ascorbic acid concentration versus time to color change, 2024-25 and 2025-26 seasons">
+<line x1="84" y1="344.0" x2="696" y2="344.0" class="grid"/>
+<text x="74" y="348.0" class="tick tick-y">0.00</text>
+<line x1="84" y1="281.2" x2="696" y2="281.2" class="grid"/>
+<text x="74" y="285.2" class="tick tick-y">0.05</text>
+<line x1="84" y1="218.4" x2="696" y2="218.4" class="grid"/>
+<text x="74" y="222.4" class="tick tick-y">0.10</text>
+<line x1="84" y1="155.6" x2="696" y2="155.6" class="grid"/>
+<text x="74" y="159.6" class="tick tick-y">0.15</text>
+<line x1="84" y1="92.8" x2="696" y2="92.8" class="grid"/>
+<text x="74" y="96.8" class="tick tick-y">0.20</text>
+<line x1="84" y1="30.0" x2="696" y2="30.0" class="grid"/>
+<text x="74" y="34.0" class="tick tick-y">0.25</text>
+<text x="84.0" y="366.0" class="tick tick-x">0</text>
+<text x="186.0" y="366.0" class="tick tick-x">30</text>
+<text x="288.0" y="366.0" class="tick tick-x">60</text>
+<text x="390.0" y="366.0" class="tick tick-x">90</text>
+<text x="492.0" y="366.0" class="tick tick-x">120</text>
+<text x="594.0" y="366.0" class="tick tick-x">150</text>
+<text x="696.0" y="366.0" class="tick tick-x">180</text>
+<text x="390.0" y="388" class="axis-title">Time to color change (s)</text>
+<text transform="translate(20,187.0) rotate(-90)" class="axis-title">Ascorbic acid concentration (M)</text>
+<line x1="172.5" y1="284.0" x2="558.2" y2="102.0" class="fit s1"/>
+<circle cx="172.5" cy="281.2" r="5" class="dot s1"><title>2024&ndash;25 set at 0.050 M: 26.0 s average of 15 trials</title></circle>
+<circle cx="174.0" cy="281.2" r="5" class="dot s1"><title>2024&ndash;25 set at 0.050 M: 26.5 s average of 15 trials</title></circle>
+<circle cx="309.4" cy="218.4" r="5" class="dot s1"><title>2024&ndash;25 set at 0.100 M: 66.3 s average of 15 trials</title></circle>
+<circle cx="307.0" cy="218.4" r="5" class="dot s1"><title>2024&ndash;25 set at 0.100 M: 65.6 s average of 15 trials</title></circle>
+<circle cx="463.5" cy="155.6" r="5" class="dot s1"><title>2024&ndash;25 set at 0.150 M: 111.6 s average of 15 trials</title></circle>
+<circle cx="558.2" cy="92.8" r="5" class="dot s1"><title>2024&ndash;25 set at 0.200 M: 139.5 s average of 15 trials</title></circle>
+<circle cx="404.2" cy="187.0" r="5" class="dot s1"><title>2024&ndash;25 set at 0.125 M: 94.2 s average of 18 trials</title></circle>
+<circle cx="263.7" cy="249.8" r="5" class="dot s1"><title>2024&ndash;25 set at 0.075 M: 52.8 s average of 20 trials</title></circle>
+<circle cx="350.8" cy="187.0" r="5" class="dot s1"><title>2024&ndash;25 set at 0.125 M: 78.5 s average of 12 trials</title></circle>
+<line x1="150.0" y1="276.6" x2="615.8" y2="95.3" class="fit s2"/>
+<circle cx="270.0" cy="218.4" r="5" class="dot s2"><title>2025&ndash;26 set at 0.100 M: 54.7 s average of 10 trials</title></circle>
+<circle cx="150.7" cy="281.2" r="5" class="dot s2"><title>2025&ndash;26 set at 0.050 M: 19.6 s average of 12 trials</title></circle>
+<circle cx="150.0" cy="281.2" r="5" class="dot s2"><title>2025&ndash;26 set at 0.050 M: 19.4 s average of 15 trials</title></circle>
+<circle cx="275.1" cy="218.4" r="5" class="dot s2"><title>2025&ndash;26 set at 0.100 M: 56.2 s average of 15 trials</title></circle>
+<circle cx="463.1" cy="155.6" r="5" class="dot s2"><title>2025&ndash;26 set at 0.150 M: 111.5 s average of 15 trials</title></circle>
+<circle cx="615.8" cy="92.8" r="5" class="dot s2"><title>2025&ndash;26 set at 0.200 M: 156.4 s average of 15 trials</title></circle>
+<circle cx="413.5" cy="187.0" r="5" class="dot s2"><title>2025&ndash;26 set at 0.125 M: 96.9 s average of 15 trials</title></circle>
+</svg>
+  </div>
+
+  <div class="table-scroll">
+  <table>
+    <caption>
+      Mean time to color change, run-to-run coefficient of variation (CV), and number of trials (n)
+      by season. Flagged trials are excluded. 0.075&nbsp;M was run only in 2024&ndash;25.
+    </caption>
+    <thead>
+      <tr><th>Concentration (M)</th><th>2024&ndash;25 mean (s)</th><th>CV</th><th>n</th><th>2025&ndash;26 mean (s)</th><th>CV</th><th>n</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>0.050</td><td>26.3</td><td>5.3%</td><td>30</td><td>19.5</td><td>15.1%</td><td>27</td></tr>
+      <tr><td>0.075</td><td>52.8</td><td>2.3%</td><td>20</td><td>&ndash;</td><td>&ndash;</td><td>&ndash;</td></tr>
+      <tr><td>0.100</td><td>65.9</td><td>4.6%</td><td>30</td><td>55.6</td><td>5.1%</td><td>25</td></tr>
+      <tr><td>0.125</td><td>87.9</td><td>9.8%</td><td>30</td><td>96.9</td><td>4.1%</td><td>15</td></tr>
+      <tr><td>0.150</td><td>111.6</td><td>3.5%</td><td>15</td><td>111.5</td><td>6.7%</td><td>15</td></tr>
+      <tr><td>0.200</td><td>139.5</td><td>1.9%</td><td>15</td><td>156.4</td><td>5.1%</td><td>15</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Data analysis</h2>
+  <p>
+    Concentration and time to color change fall on a straight line. Least-squares fits through
+    each test set's average give <em>C</em> = 0.001054&nbsp;<em>t</em> + 0.03323 for 2025&ndash;26
+    (R&sup2; = 0.9838) and <em>C</em> = 0.001278&nbsp;<em>t</em> + 0.01451 for 2024&ndash;25
+    (R&sup2; = 0.9805), with <em>C</em> in M and <em>t</em> in seconds. That lets the team read off
+    the concentration for a target stopping time instead of running a new round of tests. The two
+    seasons do not line up, though: at 0.200&nbsp;M the color change took 156.4&nbsp;s in
+    2025&ndash;26 and 139.5&nbsp;s in 2024&ndash;25. A curve from one season should be checked
+    against fresh reagents before it is trusted the next.
+  </p>
+  <p>
+    Flagged trials were left out: eleven that were stirred by hand, and three 2025&ndash;26 runs at
+    0.050&nbsp;M marked as suspected measurement error, possibly with a different iodine tincture.
+    Including those three would raise the 2025&ndash;26 0.050&nbsp;M coefficient of variation from
+    15% to 86%. The 2025&ndash;26 0.125&nbsp;M mean uses the first 15 of 26 runs at that
+    concentration.
+  </p>
+  <p>
+    Run-to-run precision was worse in 2025&ndash;26 at every concentration except 0.125&nbsp;M,
+    where the CV went from 9.8% to 4.1%. Most of the 2024&ndash;25 figure comes from two separate
+    0.125&nbsp;M sets that averaged 94.2&nbsp;s and 78.5&nbsp;s; within each set the CV was 3.5% and
+    5.5%. The bench notes record several things that could add scatter: new batches of vitamin C or
+    peroxide made partway through a set, peroxide run down to the last of the bottle, a 4&nbsp;s
+    delay before stirring started, and a ring stand adjusted mid-set for better stirring contact.
+    One note also suggests the starch solution was weaker than planned, since a new batch dispensed
+    in larger drops gave similar times. The next round tests one concentration with fresh vs. aged
+    peroxide, a single operator, and hand stirring vs. the stir plate.
+  </p>
+
+  <h2>Skills practiced</h2>
+  <ul class="tight">
+    <li>Solution prep by mass to a target molarity</li>
+    <li>Replicate testing with one controlled variable</li>
+    <li>Mean, standard deviation, and CV calculations</li>
+    <li>Linear regression and calibration curves</li>
+    <li>Outlier exclusion based on lab notebook records</li>
+    <li>Excel data management for a two-season data set</li>
+    <li>Troubleshooting variability from bench notes</li>
+    <li>Planning a follow-up experiment</li>
+  </ul>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    Teddy Scharlotta · Chemical Engineering &amp; Chemistry · Rose-Hulman Institute of Technology
+  </div>
+</footer>
+
+</body>
+</html>
